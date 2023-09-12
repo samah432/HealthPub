@@ -1,0 +1,32 @@
+[
+    {
+        "model": "healthpubapi.customer",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "employee": 1,
+            "description": "info",
+            "symptom_type": "Mental"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "employee": 2,
+            "description": "info",
+            "symptom_type": "Physical"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 3,
+        "fields": {
+            "customer": 3,
+            "employee": 3,
+            "description": "info",
+            "symptom_type": "Spiritual"
+        }
+    }
+]

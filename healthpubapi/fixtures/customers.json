@@ -1,0 +1,32 @@
+[
+    {
+        "model": "healthpubapi.customer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "DOB": "1990-05-15",
+            "gender": "Male",
+            "address": "400 Bad Request Ave"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "DOB": "1985-03-20",
+            "gender": "Male",
+            "address": "400 Bad Request Ave"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "DOB": "1992-08-10",
+            "gender": "Male",
+            "address": "400 Bad Request Ave"
+        }
+    }
+]

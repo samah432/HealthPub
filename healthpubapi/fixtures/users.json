@@ -1,0 +1,29 @@
+[
+    {
+        "model": "healthpubapi.customer",
+        "pk": 1,
+        "fields": {
+            "first_name": "Samah",
+            "last_name": "Barwari",
+            "email": "sib1998@yahoo.com"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 2,
+        "fields": {
+            "first_name": "Mike",
+            "last_name": "Johnson",
+            "email": "abc123@yahoo.com"
+        }
+    },
+    {
+        "model": "healthpubapi.customer",
+        "pk": 3,
+        "fields": {
+            "first_name": "Josh",
+            "last_name": "Becker",
+            "email": "hello@yahoo.com"
+        }
+    }
+]

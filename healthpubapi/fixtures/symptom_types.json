@@ -1,0 +1,23 @@
+[
+    {
+        "model": "healthpubapi.employee",
+        "pk": 1,
+        "fields": {
+            "symptom_type": 1
+        }
+    },
+    {
+        "model": "healthpubapi.employee",
+        "pk": 2,
+        "fields": {
+            "symptom_type": 2
+        }
+    },
+    {
+        "model": "healthpubapi.employee",
+        "pk": 3,
+        "fields": {
+            "symptom_type": 3
+        }
+    }
+]

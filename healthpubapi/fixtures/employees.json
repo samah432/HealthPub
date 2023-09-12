@@ -1,0 +1,26 @@
+[
+    {
+        "model": "healthpubapi.employee",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "position": "Physician"
+        }
+    },
+    {
+        "model": "healthpubapi.employee",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "position": "Dentist"
+        }
+    },
+    {
+        "model": "healthpubapi.employee",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "position": "Surgeon"
+        }
+    }
+]
