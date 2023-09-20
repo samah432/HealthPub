@@ -1,23 +1,23 @@
 [
     {
-        "model": "healthpubapi.employee",
+        "model": "healthpubapi.symptomtype",
         "pk": 1,
         "fields": {
-            "symptom_type": 1
+            "type": "Mental"
         }
     },
     {
-        "model": "healthpubapi.employee",
+        "model": "healthpubapi.symptomtype",
         "pk": 2,
         "fields": {
-            "symptom_type": 2
+            "type": "Physical"
         }
     },
     {
-        "model": "healthpubapi.employee",
+        "model": "healthpubapi.symptomtype",
         "pk": 3,
         "fields": {
-            "symptom_type": 3
+            "type": "Spiritual"
         }
     }
 ]

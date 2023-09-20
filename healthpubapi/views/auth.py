@@ -17,12 +17,12 @@ def login_user(request):
     Method arguments:
       request -- The full HTTP request object
     '''
-    email = request.data['email']
+    username = request.data['username']
     password = request.data['password']
 
     # Use the built-in authenticate method to verify
     # authenticate returns the user object or None if no user is found
-    authenticated_user = authenticate(username=email, password=password)
+    authenticated_user = authenticate(username=username, password=password)
 
     # If authentication was successful, respond with their token
     if authenticated_user is not None:
@@ -48,15 +48,19 @@ def register_user(request):
       request -- The full HTTP request object
     '''
     account_type = request.data.get('account_type', None)
+    username = request.data.get('username', None)
     email = request.data.get('email', None)
     first_name = request.data.get('first_name', None)
     last_name = request.data.get('last_name', None)
     password = request.data.get('password', None)
+    position = request.data.get('position', None)
+
 
     if account_type is not None \
-        and email is not None\
+        and username is not None\
         and first_name is not None \
         and last_name is not None \
+        and email is not None \
         and password is not None:
 
         if account_type == 'customer':
@@ -67,10 +71,10 @@ def register_user(request):
                     status=status.HTTP_400_BAD_REQUEST
                 )
         elif account_type == 'employee':
-            specialty = request.data.get('specialty', None)
-            if specialty is None:
+            position = request.data.get('position', None)
+            if position is None:
                 return Response(
-                    {'message': 'You must provide a specialty for an employee'},
+                    {'message': 'You must provide a position for an employee'},
                     status=status.HTTP_400_BAD_REQUEST
                 )
         else:
@@ -83,7 +87,7 @@ def register_user(request):
             # Create a new user by invoking the `create_user` helper method
             # on Django's built-in User model
             new_user = User.objects.create_user(
-                username=request.data['email'],
+                username=request.data['username'],
                 email=request.data['email'],
                 password=request.data['password'],
                 first_name=request.data['first_name'],
@@ -100,14 +104,17 @@ def register_user(request):
         if account_type == 'customer':
             account = Customer.objects.create(
                 address=request.data['address'],
-                user=new_user
+                user=new_user,
+                gender=request.data['gender'],
+                DOB=request.data['DOB']
+
             )
         elif account_type == 'employee':
             new_user.is_staff = True
             new_user.save()
 
             account = Employee.objects.create(
-                specialty=request.data['specialty'],
+                position=request.data['position'],
                 user=new_user
             )
 

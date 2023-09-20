@@ -1,29 +1,68 @@
 [
     {
-        "model": "healthpubapi.customer",
+        "model": "auth.user",
         "pk": 1,
         "fields": {
             "first_name": "Samah",
             "last_name": "Barwari",
-            "email": "sib1998@yahoo.com"
+            "email": "sib1998@yahoo.com",
+            "username": "Carrie1945",
+            "password": "me"
         }
     },
     {
-        "model": "healthpubapi.customer",
+        "model": "auth.user",
         "pk": 2,
         "fields": {
             "first_name": "Mike",
             "last_name": "Johnson",
-            "email": "abc123@yahoo.com"
+            "email": "abc123@yahoo.com",
+            "username": "abc123@yahoo.com",
+            "password": "123"
+
         }
     },
     {
-        "model": "healthpubapi.customer",
+        "model": "auth.user",
         "pk": 3,
         "fields": {
             "first_name": "Josh",
             "last_name": "Becker",
-            "email": "hello@yahoo.com"
+            "email": "hello@yahoo.com",
+            "username": "hello@yahoo.com",
+            "password": "1998"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "first_name": "Samah",
+            "last_name": "Barwari",
+            "email": "sib199867@yahoo.com",
+            "username": "sib199867@yahoo.com"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "first_name": "Mike",
+            "last_name": "Johnson",
+            "email": "abc1234@yahoo.com",
+            "username": "abc1234@yahoo.com",
+            "password": "432"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "first_name": "Josh",
+            "last_name": "Becker",
+            "email": "helloo@yahoo.com",
+            "username": "helloo@yahoo.com",
+            "password": "23"
         }
     }
 ]

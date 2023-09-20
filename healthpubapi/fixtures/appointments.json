@@ -1,32 +1,36 @@
 [
     {
-        "model": "healthpubapi.customer",
+        "model": "healthpubapi.appointment",
         "pk": 1,
         "fields": {
             "customer": 1,
             "employee": 1,
             "description": "info",
-            "symptom_type": "Mental"
+            "symptom_type": 1,
+            "date": "2023-09-14"
+
         }
     },
     {
-        "model": "healthpubapi.customer",
+        "model": "healthpubapi.appointment",
         "pk": 2,
         "fields": {
             "customer": 2,
             "employee": 2,
             "description": "info",
-            "symptom_type": "Physical"
+            "symptom_type": 2,
+            "date": "2023-10-20"
         }
     },
     {
-        "model": "healthpubapi.customer",
+        "model": "healthpubapi.appointment",
         "pk": 3,
         "fields": {
             "customer": 3,
             "employee": 3,
             "description": "info",
-            "symptom_type": "Spiritual"
+            "symptom_type": 3,
+            "date": "2023-11-10"
         }
     }
 ]

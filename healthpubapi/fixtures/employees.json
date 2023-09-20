@@ -3,7 +3,7 @@
         "model": "healthpubapi.employee",
         "pk": 1,
         "fields": {
-            "user": 1,
+            "user": 4,
             "position": "Physician"
         }
     },
@@ -11,7 +11,7 @@
         "model": "healthpubapi.employee",
         "pk": 2,
         "fields": {
-            "user": 2,
+            "user": 5,
             "position": "Dentist"
         }
     },
@@ -19,7 +19,7 @@
         "model": "healthpubapi.employee",
         "pk": 3,
         "fields": {
-            "user": 3,
+            "user": 6,
             "position": "Surgeon"
         }
     }
